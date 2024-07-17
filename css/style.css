@@ -1,0 +1,252 @@
+* {
+  user-select: none;
+  margin: 0;
+}
+
+#field {
+  position: relative;
+}
+
+#player {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-image: url('../img/mini_player.jpg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#buttons {
+  position: relative;
+}
+
+.button, #aButton, #bButton {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 7px;
+  box-shadow: 2px 2px rgb(90, 90, 90);
+  cursor: pointer;
+}
+
+.button:active, #aButton:active, #bButton:active {
+  box-shadow: 0 0;
+}
+
+#up {
+  top: 0;
+  left: 40px;
+}
+
+#up:active {
+  top: 2px;
+  left: 42px;
+}
+
+#down {
+  top: 80px;
+  left: 40px;
+}
+
+#down:active {
+  top: 82px;
+  left: 42px;
+}
+
+#left {
+  top: 40px;
+  left: 0;
+}
+
+#left:active {
+  top: 42px;
+  left: 2px;
+}
+
+#right {
+  top: 40px;
+  left: 80px;
+}
+
+#right:active {
+  top: 42px;
+  left: 82px;
+}
+
+#aButton {
+  top: 20px;
+  left: 200px;
+  border-radius: 50%;
+}
+
+#aButton:active {
+  top: 22px;
+  left: 202px;
+}
+
+#bButton {
+  top: 60px;
+  left: 250px;
+  border-radius: 50%;
+}
+
+#bButton:active {
+  top: 62px;
+  left: 252px;
+}
+
+.battle {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+.showBattle {
+  left: 0;
+  transition: all 3s linear;
+}
+
+#frame {
+  position: absolute;
+  top: -70px;
+  left: 600px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.pokemon {
+  width: 400px;
+  height: 400px;
+  transition: all 0.3s linear;
+}
+
+.killed {
+  margin-top: 400px;
+}
+
+#playerImg {
+  position: absolute;
+  top: 243px;
+  left: 100px;
+  width: 200px;
+}
+
+.wild_pokemon_status {
+  position: absolute;
+  top: 60px;
+  left: 520px;
+  background-color: antiquewhite;
+  width: 160px;
+  height: 60px;
+  border: 3px solid brown;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+#my_pokemon_status {
+  display: none;
+  position: absolute;
+  top: 290px;
+  left: 420px;
+  background-color: antiquewhite;
+  width: 160px;
+  height: 60px;
+  border: 3px solid brown;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.stamina {
+  background-color: white;
+  width: 148px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.stamina_bar {
+  position: relative;
+  left: 0;
+  background-color: rgb(95, 255, 47);
+  width: 146px;
+  height: 8px;
+  border-radius: 5px;
+  transition: all 3s linear;
+}
+
+.death {
+  left: -146px;
+}
+
+.scenario {
+  position: absolute;
+  top: 430px;
+  left: 100px;
+  background-color: white;
+  width: 800px;
+  height: 68px;
+  border: 3px solid brown;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3px 10px;
+}
+
+.next {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 16px;
+  height: 8px;
+  box-sizing: border-box;
+  border-top: 8px solid red;
+  border-right: 8px solid white;
+  border-left: 8px solid white;
+}
+
+.myPokemon {
+  position: absolute;
+  top: 268px;
+  left: 100px;
+  width: 300px;
+  opacity: 0;
+  transition: all 2s linear;
+}
+
+.showMyPokemon {
+  opacity: 1;
+}
+
+#select {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 16px;
+  box-sizing: border-box;
+  border-top: 8px solid white;
+  border-right: 8px solid black;
+  border-bottom: 8px solid white;
+  margin-right: 20px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/monster_ball.png" type="image/x-icon">
+</head>
+<body>
+  <div id="field">
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+    <div id="player"></div>
+  </div>
+  <div id="buttons">
+    <div id="up" class="button">↑</div>
+    <div id="down" class="button">↓</div>
+    <div id="left" class="button">←</div>
+    <div id="right" class="button">→</div>
+    <div id="aButton">A</div>
+    <div id="bButton">B</div>
+  </div>
+  <div id="battle" class="battle">
+    <div id="frame"></div>
+    <div class="wild_pokemon_status">
+      <div id="name_display"></div>
+      <div id="stamina" class="stamina">
+        <div id="stamina_bar" class="stamina_bar"></div>
+      </div>
+    </div>
+    <img src="./img/player.jpg" id="playerImg" alt="player">
+    <div id="my_pokemon_status">
+      <div id="my_pokemon_name"></div>
+      <div class="stamina">
+        <div class="stamina_bar"></div>
+      </div>
+    </div>
+    <div id="scenario" class="scenario">
+      <p id="content"></p>
+    </div>
+  </div>
+</body>
+</html>
