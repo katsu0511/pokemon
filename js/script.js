@@ -9,6 +9,7 @@ ctx.fillRect(700, 0, 300, 500);
 ctx.strokeStyle = 'black';
 ctx.strokeRect(0, 0, 1000, 500);
 
+let numberOfWalk = 10;
 let positionY = 0;
 let positionX = 0;
 let canMove = true;
@@ -128,12 +129,14 @@ function moveRight() {
 }
 
 function playerMoving() {
-  if (canMove && positionX >= 700) {
+  if (numberOfWalk === 0 && canMove && positionX >= 700) {
     const number = Math.random();
-    if (number < 0.05) {
+    if (number < 0.03) {
       canMove = false;
       battleStarts();
     }
+  } else if (numberOfWalk > 0) {
+    numberOfWalk--;
   }
 }
 
@@ -364,6 +367,7 @@ function reset() {
   wildPokemonObj = '';
   myPokemonObj = '';
   wildPokemonImg = '';
+  numberOfWalk = 10;
   setTimeout(resetTransition, 100);
 }
 

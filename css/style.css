@@ -84,24 +84,24 @@
 
 #aButton {
   top: 20px;
-  left: 200px;
+  left: 250px;
   border-radius: 50%;
 }
 
 #aButton:active {
   top: 22px;
-  left: 202px;
+  left: 252px;
 }
 
 #bButton {
   top: 60px;
-  left: 250px;
+  left: 200px;
   border-radius: 50%;
 }
 
 #bButton:active {
   top: 62px;
-  left: 252px;
+  left: 202px;
 }
 
 .battle {
